@@ -1,19 +1,20 @@
 # Waiter bot will type 
-# today's specials and ask for your order
+# today's menu and ask for your order
 
 # Import the time module for delays
 import time
 
+# Refactor repetative print and time.sleep() code
+def print_pause(string):
+    print(str(string))
+    time.sleep(2)
+
 # Bot will introduce themselves
-print("Hello! I am Bob, the Breakfast Bot.")
-time.sleep(2)
+print_pause("Hello! I am Bob, the Breakfast Bot.")
 # Bot will type today's menu
-print("Today we have two breakfasts available.")
-time.sleep(2)
-print("The first is waffles with strawberries and whipped cream.")
-time.sleep(2)
-print("The second is sweet potato pancakes with butter and syrup.")
-time.sleep(2)
+print_pause("Today we have two breakfasts available.")
+print_pause("The first is waffles with strawberries and whipped cream.")
+print_pause("The second is sweet potato pancakes with butter and syrup.")
 
 while True:
     while True:
