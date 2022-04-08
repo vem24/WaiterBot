@@ -9,6 +9,7 @@ def print_pause(string):
     print(str(string))
     time.sleep(2)
 
+def intro():
 # Bot will introduce themselves
 print_pause("Hello! I am Bob, the Breakfast Bot.")
 # Bot will type today's menu
@@ -26,7 +27,7 @@ def valid_input(prompt, option1, option2):
         else:
             print_pause("Sorry, I don't understand.")
 
-while True:
+def get_order():
     response = valid_input("Please place your order. "
                     "Would you like waffles or pancakes?\n", "waffles", "pancakes")
     if "waffles" in response:
@@ -34,7 +35,12 @@ while True:
         
     elif "pancakes" in response:
         print_pause("Pancakes it is!")
-  
+
+intro()
+
+while True:
+
+    get_order()
     # Let cusomer know their order will be ready soon.            
     print_pause("Your order will be ready shortly.")
    
