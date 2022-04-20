@@ -1,5 +1,6 @@
-# Waiter bot will type 
-# today's menu and ask for your order
+# Waiter bot will type.
+# today's menu and ask for your order.
+# Bot will then ask if you'd like to order again.
 
 # Import the time module for delays
 import time
